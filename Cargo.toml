@@ -1,0 +1,17 @@
+[package]
+name = "principal-vanity-generator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8"
+bip39 = "2.0"
+bip32 = "0.5"
+k256 = "0.13"
+ic-agent = "0.37"
+rayon = "1.10"
+
+
+[profile.release]
+opt-level = 3
+lto = true
